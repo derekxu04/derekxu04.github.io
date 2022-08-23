@@ -1,0 +1,26 @@
+* {
+    font-family: "Metropolis";
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #121212;
+}
+
+#greeting {
+    text-align: center;
+    color: white;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.gradient-text {
+    background-image: linear-gradient(135deg, #ddb4f6, #8dd0fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.about-me {
+    color: white;
+    text-align: justify;
+    margin: 1rem;
+}

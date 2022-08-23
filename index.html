@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <section class="introduction">
+        <div id="greeting">👋 Hi, I'm <span class="gradient-text">Derek</span>.</div>
+    </section>
+    <section class="about-me">
+        <div id="food"></div>
+    </section>
+    <script>
+        var i = 0;
+        var txt = "I like to eat food."; /* The text */
+        var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("food").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }  
+        typeWriter();
+    </script>
 </body>
 </html>
